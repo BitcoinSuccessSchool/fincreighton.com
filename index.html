@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fin Creighton | Bitcoin Self-Custody & Sovereignty</title>
+<meta name="description" content="Fin Creighton, founder of Bitcoin Success School. I help Bitcoiners become confident with their Bitcoin: secure self-custody, a tested recovery and a plan their family can follow.">
+<link rel="canonical" href="https://fincreighton.com/">
+<meta property="og:title" content="Fin Creighton">
+<meta property="og:description" content="I help Bitcoiners become confident: secure your Bitcoin, protect your family’s access and take control.">
+<meta property="og:url" content="https://fincreighton.com/">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a0a0a'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Impact,Arial Narrow,sans-serif' font-size='38' fill='%23f89e16'%3EFC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Fin Creighton",
+  "url": "https://fincreighton.com/",
+  "jobTitle": "Founder",
+  "worksFor": { "@type": "Organization", "name": "Bitcoin Success School", "url": "https://bitcoinsuccessschool.com" },
+  "sameAs": [
+    "https://www.youtube.com/@FinCreighton",
+    "https://www.instagram.com/fincreighton",
+    "https://x.com/fincreighton",
+    "https://open.spotify.com/show/3nwPsPStzBMMk2kGw3kNR5"
+  ]
+}
+</script>
+<style>
+  :root {
+    --bg: #0a0a0a;
+    --fg: #fafafa;
+    --muted: #999999;
+    --line: #2e2e2e;
+    --orange: #f89e16;
+    --orange-2: #fb923c;
+    --grey: #c4c4c4;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: Inter, system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-height: 100dvh;
+    background-image: radial-gradient(ellipse 60% 45% at 50% 38%, rgba(248, 158, 22, 0.07), transparent 70%);
+  }
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 32px 16px 16px;
+  }
+  .mark {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    max-width: min(520px, 56vh);
+    margin-bottom: 28px;
+  }
+  .hero {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .6), 0 0 40px rgba(248, 158, 22, .12);
+  }
+  .mark-rule {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--orange) 20%, var(--orange) 80%, transparent);
+    opacity: .8;
+  }
+  h1 {
+    font-weight: 800;
+    font-size: clamp(34px, 7vw, 64px);
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+    max-width: 14ch;
+  }
+  h1 .accent {
+    display: block;
+    background: linear-gradient(to right, var(--orange), var(--orange-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .sub {
+    margin-top: 20px;
+    max-width: 30em;
+    font-size: clamp(16px, 2.2vw, 18px);
+    line-height: 1.55;
+    color: #d4d4d4;
+  }
+  .socials {
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 0;
+    list-style: none;
+  }
+  .socials li { display: flex; }
+  .socials li + li { border-left: 1px solid var(--line); }
+  .socials a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 18px;
+    color: var(--fg);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color .2s;
+  }
+  .socials a:hover { color: var(--orange); }
+  .socials svg { width: 20px; height: 20px; flex: none; }
+  .cta {
+    margin-top: 36px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--orange);
+    color: #0a0a0a;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 0 20px rgba(248, 158, 22, .3), 0 0 40px rgba(248, 158, 22, .1);
+    transition: transform .2s, box-shadow .2s;
+  }
+  .cta:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0 30px rgba(248, 158, 22, .4), 0 0 60px rgba(248, 158, 22, .2);
+  }
+  .cta svg { width: 18px; height: 18px; transition: transform .2s; }
+  .cta:hover svg { transform: translateX(3px); }
+  .sig {
+    margin-top: 44px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+  .sig::before {
+    content: "";
+    width: 40px;
+    height: 1px;
+    background: var(--line);
+  }
+  .sig-name {
+    font-size: 12px;
+    letter-spacing: 0.3em;
+    color: var(--muted);
+    text-transform: uppercase;
+  }
+  .sig-brand {
+    font-family: "Bebas Neue", Impact, sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    color: var(--orange);
+    line-height: 1;
+  }
+  .sig-brand .w { color: var(--fg); }
+  .sig-brand .g { color: var(--grey); }
+  .sig-role { font-size: 12px; color: var(--muted); margin-top: -8px; }
+  footer {
+    padding: 20px 16px 28px;
+    text-align: center;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #6b6b6b;
+  }
+  @media (max-width: 480px) {
+    .mark { margin-bottom: 26px; }
+    .socials a { padding: 6px 12px; font-size: 13px; }
+    .socials a .handle { display: none; }
+    .socials svg { width: 22px; height: 22px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <figure class="mark">
+    <img class="hero" src="fin-bitcoin-mena.jpg" width="960" height="495" alt="Fin Creighton on a panel at Bitcoin MENA">
+    <span class="mark-rule" aria-hidden="true"></span>
+  </figure>
+
+  <h1>I Help Bitcoiners <span class="accent">Become CONFIDENT</span></h1>
+
+  <p class="sub">I help you learn and implement to secure your Bitcoin, protect your family’s access, and build the confidence to take control</p>
+
+  <ul class="socials">
+    <li><a href="https://www.youtube.com/@FinCreighton" target="_blank" rel="noopener" aria-label="YouTube">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#FF0000" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8Z"/><path fill="#fff" d="M9.6 15.6 15.8 12 9.6 8.4z"/></svg>
+      <span class="handle">@FinCreighton</span></a></li>
+    <li><a href="https://www.instagram.com/fincreighton" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="ig" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#FEDA75"/><stop offset=".35" stop-color="#FA7E1E"/><stop offset=".6" stop-color="#D62976"/><stop offset=".85" stop-color="#962FBF"/><stop offset="1" stop-color="#4F5BD5"/></linearGradient></defs><rect x="1.5" y="1.5" width="21" height="21" rx="6" fill="none" stroke="url(#ig)" stroke-width="2.2"/><circle cx="12" cy="12" r="4.6" fill="none" stroke="url(#ig)" stroke-width="2.2"/><circle cx="17.6" cy="6.4" r="1.4" fill="url(#ig)"/></svg>
+      <span class="handle">@fincreighton</span></a></li>
+    <li><a href="https://x.com/fincreighton" target="_blank" rel="noopener" aria-label="X">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.2 2.3h3.4l-7.4 8.4 8.7 11.5h-6.8l-5.3-7-6.1 7H1.3l7.9-9L.8 2.3h7l4.8 6.4 5.6-6.4Zm-1.2 17.9h1.9L7.1 4.2h-2L17 20.2Z"/></svg>
+      <span class="handle">@fincreighton</span></a></li>
+    <li><a href="https://open.spotify.com/show/3nwPsPStzBMMk2kGw3kNR5" target="_blank" rel="noopener" aria-label="Podcast on Spotify">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#1DB954"/><path fill="none" stroke="#000" stroke-linecap="round" stroke-width="1.9" d="M6.3 9.2c3.8-1.1 8.3-.8 11.6 1.1M7 12.5c3.1-.9 6.6-.6 9.3 1M7.7 15.6c2.5-.6 5-.4 7.1.8"/></svg>
+      <span class="handle">Podcast</span></a></li>
+  </ul>
+
+  <a class="cta" href="https://bitcoinsuccessschool.com" target="_blank" rel="noopener">
+    Work With Me
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+  </a>
+
+  <div class="sig">
+    <span class="sig-name">Fin Creighton</span>
+    <a class="sig-brand" href="https://bitcoinsuccessschool.com" target="_blank" rel="noopener">Bitcoin <span class="w">Success</span> <span class="g">School</span></a>
+    <span class="sig-role">Founder</span>
+  </div>
+</main>
+
+<footer>
+  Education only. Not financial, tax or legal advice. We never hold your keys.
+</footer>
+</body>
+</html>
+<!--
+COPYOS REVIEW · fincreighton.com personal site · 25 OCT 2026
+A Context:  pass. One-screen personal site: who Fin is, where to follow him, one route to work with him (Bitcoin Success School).
+B Customer: pass. 25 OCT 2026 Fin's own headline "I Help Bitcoiners Become CONFIDENT" and sub-headline, in his words; "confident" is his business line ("feel confident using it"). Note: "I help" appears in both lines, left as Fin wrote it.
+C Journey:  pass. Arrives from his name, socials or a talk; one move, "Work With Me", lands on the BSS site where the Clarity Call is booked. Same look and colours as BSS.
+D Checks:   headline 9/16 (Urgent 1 · Unique 2 · Specific 2 · Useful 4): under 12, kept on purpose: a name-search identity page, the BSS site does the selling · one idea · no numbers, reviews or logos claimed · compliance: "not financial, tax or legal advice" and "we never hold your keys" match the Self-Custody Build terms · pass
+Seats at the table: Chief Strategy Officer, UI/UX Design, SEO, Copy Chief
+-->
+
